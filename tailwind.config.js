@@ -6,6 +6,11 @@ module.exports = {
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
+		colors: {
+			dark: 'rgb(var(--color-dark) / <alpha-value>)',
+			light: 'rgb(var(--color-light) / <alpha-value>)',
+			primary: 'rgb(var(--color-primary) / <alpha-value>)',
+		},
 		extend: {
 			fontFamily: {
 				sans: ['var(--font-mulish)'],

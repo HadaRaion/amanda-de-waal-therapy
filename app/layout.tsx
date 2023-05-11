@@ -27,7 +27,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			{/* <body className={mulish.className}>{children}</body> */}
-			<body className={`${mulish.variable} ${philosopher.variable} font-sans`}>
+			<body
+				className={`${mulish.variable} ${philosopher.variable} font-sans bg-light font-light`}>
 				{children}
 			</body>
 		</html>

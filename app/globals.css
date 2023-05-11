@@ -3,12 +3,24 @@
 @tailwind utilities;
 
 :root {
-	--bg-color: 0, 0, 0;
+}
+
+@layer base {
+	:root {
+		--color-dark: 58 51 46;
+		--color-light: 240 237 230;
+		--color-primary: 222 219 209;
+	}
+}
+
+@layer components {
+	.link {
+		@apply text-xs tracking-[0.2em] uppercase;
+	}
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	min-height: 100dvh;
 	overflow-y: scroll;
-	background-color: var(--bg-color);
 }
