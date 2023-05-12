@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Container from './Container';
 
 const links = [
 	{ href: '/about', label: 'About' },
@@ -18,14 +19,14 @@ const Header = () => {
 
 	return (
 		<header className="border-b border-black">
-			<div className="container flex justify-between items-center h-20">
+			<Container className="flex justify-between items-center h-20">
 				<Link className="mt-1" href="/">
 					<h1 className="sr-only">Amanda de Waal Therapy</h1>
-					<Image src="/logo.svg" width={230} height={26} alt="logo" />
+					<Image src="/logo.svg" width={230} height={26} alt="logo" priority />
 				</Link>
 
 				<nav>
-					<ul className="flex gap-5">
+					<ul className="flex gap-10">
 						{links.map(link => (
 							<li key={link.href}>
 								<Link className="relative link" href={link.href}>
@@ -42,7 +43,7 @@ const Header = () => {
 						))}
 					</ul>
 				</nav>
-			</div>
+			</Container>
 		</header>
 	);
 };
