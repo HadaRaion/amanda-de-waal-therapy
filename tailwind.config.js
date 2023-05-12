@@ -7,10 +7,24 @@ module.exports = {
 	],
 	theme: {
 		colors: {
+			transparent: 'transparent',
+			current: 'currentColor',
 			dark: 'rgb(var(--color-dark) / <alpha-value>)',
 			light: 'rgb(var(--color-light) / <alpha-value>)',
 			primary: 'rgb(var(--color-primary) / <alpha-value>)',
+			black: '#000',
 		},
+
+		container: {
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '4rem',
+				xl: '5rem',
+				'2xl': '6rem',
+			},
+		},
+
 		extend: {
 			fontFamily: {
 				sans: ['var(--font-mulish)'],

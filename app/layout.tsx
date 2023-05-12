@@ -1,5 +1,7 @@
 import './globals.css';
 import { Mulish, Philosopher } from 'next/font/google';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const mulish = Mulish({
 	subsets: ['latin'],
@@ -15,8 +17,15 @@ const philosopher = Philosopher({
 });
 
 export const metadata = {
-	title: 'Amanda de Waal Therapy',
+	title: {
+		default: 'Amanda de Waal Therapy',
+		template: 'Amanda de Waal Therapy | %s',
+	},
+
 	description: '헬로',
+	icons: {
+		icon: '/favicon.ico',
+	},
 };
 
 export default function RootLayout({
@@ -26,10 +35,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			{/* <body className={mulish.className}>{children}</body> */}
 			<body
-				className={`${mulish.variable} ${philosopher.variable} font-sans bg-light font-light`}>
-				{children}
+				className={`${mulish.variable} ${philosopher.variable} flex flex-col w-full font-sans bg-light font-light`}>
+				<Header />
+				<main className="grow">{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);
