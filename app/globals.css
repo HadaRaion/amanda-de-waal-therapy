@@ -17,6 +17,10 @@
 	.link {
 		@apply text-xs tracking-[0.2em] uppercase;
 	}
+
+	.mobile-menu {
+		@apply text-sm tracking-[0.2em] uppercase font-extralight;
+	}
 }
 
 body {

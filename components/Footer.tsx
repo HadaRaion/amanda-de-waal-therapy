@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Container from './container';
+import Container from './Container';
 
 const contactInfo = [
 	{ label: 'phone', href: 'tel:+15874104183', value: '+1 587 410 4183' },
