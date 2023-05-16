@@ -31,10 +31,11 @@ module.exports = {
 				sans: ['var(--font-mulish)'],
 				serif: ['var(--font-philosopher)'],
 			},
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+			minHeight: {
+				screenHeightWithoutHeader: 'calc(100dvh - 5rem)',
+			},
+			height: {
+				screenHeightWithoutHeader: 'calc(100dvh - 5rem)',
 			},
 		},
 	},

@@ -36,7 +36,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${mulish.variable} ${philosopher.variable} flex flex-col w-full font-sans bg-light font-light`}>
+				className={`${mulish.variable} ${philosopher.variable} flex flex-col w-full font-sans bg-light font-light selection:bg-dark/60 selection:text-light`}>
 				<Header />
 				<main className="grow">{children}</main>
 				<Footer />
