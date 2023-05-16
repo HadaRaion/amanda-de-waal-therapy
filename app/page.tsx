@@ -1,8 +1,14 @@
+import Button from '@/components/Button';
+import PageWrapper from '@/components/PageWrapper';
+
 export default function Home() {
 	return (
-		<section className="">
-			<p className="link">Main page</p>
-			<h2 className="font-serif">serif test</h2>
-		</section>
+		<PageWrapper>
+			<section className="">
+				<p className="link">Main page</p>
+
+				<Button href="/services" label="SEE DETAIL" />
+			</section>
+		</PageWrapper>
 	);
 }

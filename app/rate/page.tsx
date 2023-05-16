@@ -1,7 +1,9 @@
+import PageTitle from '@/components/PageTitle';
+
 export default function RatePage() {
 	return (
 		<div>
-			<p>Rate</p>
+			<PageTitle title="Rate & Insurance" />
 		</div>
 	);
 }
