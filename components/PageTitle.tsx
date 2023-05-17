@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-export type Props = {
+type Props = {
 	title: string;
 };
 
