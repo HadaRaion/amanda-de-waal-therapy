@@ -21,9 +21,47 @@
 	.mobile-menu {
 		@apply text-sm tracking-[0.2em] uppercase font-extralight;
 	}
+
+	.mobile-br {
+		@apply block sm:inline-block;
+	}
+
+	.br {
+		@apply md:block;
+	}
 }
 
 body {
 	min-height: 100dvh;
 	overflow-y: scroll;
+}
+
+.branch-bg::before,
+.branch-bg::after {
+	content: '';
+	position: absolute;
+	aspect-ratio: 1/2;
+	transform-origin: bottom center;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	background-color: #fff;
+	opacity: 0.3;
+}
+
+.branch-bg::before {
+	width: 18%;
+	top: 0;
+	left: 0;
+	transform: translate(-100%, -118%) rotate(120deg);
+	-webkit-mask: url('/illust/olive-branch-02.svg') no-repeat center/contain;
+	mask: url('/illust/olive-branch-02.svg') no-repeat center/contain;
+}
+
+.branch-bg::after {
+	width: 15%;
+	bottom: 0;
+	right: 0;
+	transform: translate(50%, 10%) rotate(-60deg);
+	-webkit-mask: url('/illust/olive-branch-03.svg') no-repeat center/contain;
+	mask: url('/illust/olive-branch-03.svg') no-repeat center/contain;
 }
