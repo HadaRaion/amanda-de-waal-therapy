@@ -42,7 +42,7 @@ export default function PageTitle({ title }: Props) {
 		<>
 			<section className="py-32">
 				<motion.h2
-					className="font-serif text-5xl font-normal text-center"
+					className="font-serif text-4xl md:text-5xl  font-normal text-center"
 					variants={sentence}
 					initial="hidden"
 					animate="visible">

@@ -31,6 +31,10 @@ module.exports = {
 				sans: ['var(--font-mulish)'],
 				serif: ['var(--font-philosopher)'],
 			},
+			lineHeight: {
+				'extra-loose': '2.5',
+				12: '3rem',
+			},
 			minHeight: {
 				screenHeightWithoutHeader: 'calc(100dvh - 5rem)',
 			},
