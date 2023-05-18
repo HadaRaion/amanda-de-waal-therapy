@@ -4,7 +4,7 @@
 		"author": "Hillary McBride",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/the-wisdom-of-your-body/9781443465281-item.html?ikwid=The+wisdom+of+your+body&ikwsec=Home&ikwidx=0#algoliaQueryId=d346b098b75c1423d65a4fcdd9c1735a",
-		"path": "resources_book_adult_01.jpg",
+		"path": "resources_book_adult_01",
 		"featured": true
 	},
 	{
@@ -12,7 +12,7 @@
 		"author": "Sonya Renee Taylor",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/the-body-is-not-an/9781523090990-item.html?ikwid=the+body+is+not+an+apology&ikwsec=Home&ikwidx=0#algoliaQueryId=7113f832477dd224c1f84ba0340ee336",
-		"path": "resources_book_adult_02.jpg",
+		"path": "resources_book_adult_02",
 		"featured": false
 	},
 	{
@@ -20,7 +20,7 @@
 		"author": "Ilyse Kennedy",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/the-tender-parts-a-guide/9781683735540-item.html?ikwid=The+tender+parts&ikwsec=Home&ikwidx=0#algoliaQueryId=afe83add14ed1915fb85becdcf5cb06b",
-		"path": "resources_book_adult_03.jpg",
+		"path": "resources_book_adult_03",
 		"featured": true
 	},
 	{
@@ -28,7 +28,7 @@
 		"author": "Francis Weller",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/the-wild-edge-of-sorrow/9781583949764-item.html?ikwid=The+Wild+Edge+of+Sorrow&ikwsec=Home&ikwidx=0#algoliaQueryId=5ac414640c22684061231682f5339f24",
-		"path": "resources_book_adult_04.jpg",
+		"path": "resources_book_adult_04",
 		"featured": false
 	},
 	{
@@ -36,7 +36,7 @@
 		"author": "Hilary Jacobs Hendel",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/its-not-always-depression-working/9780399588143-item.html?ikwid=its+not+always+depression&ikwsec=Home&ikwidx=0#algoliaQueryId=cd289674311c616873c5de5ef825d583",
-		"path": "resources_book_adult_05.jpg",
+		"path": "resources_book_adult_05",
 		"featured": true
 	},
 	{
@@ -44,7 +44,7 @@
 		"author": "Lindsay C. Gibson",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/adult-children-of-emotionally-immature/9781626251700-item.html?ikwid=adult+children+of+emotionally+immature+parents&ikwsec=Home&ikwidx=0#algoliaQueryId=8a209de34c957d104e174fc9b43b2217",
-		"path": "resources_book_adult_06.jpg",
+		"path": "resources_book_adult_06",
 		"featured": false
 	},
 	{
@@ -52,7 +52,7 @@
 		"author": "Richard Schwartz",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/no-bad-parts-healing-trauma/9781683646686-item.html?ikwid=no+bad+parts&ikwsec=Home&ikwidx=0#algoliaQueryId=0e19981ccb2a8c9813117bb0f96b1e4d",
-		"path": "resources_book_adult_07.jpg",
+		"path": "resources_book_adult_07",
 		"featured": true
 	},
 	{
@@ -60,7 +60,7 @@
 		"author": "Jayneen Sanders",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/lets-talk-about-body-boundaries/9781925089196-item.html?ikwid=let%27s+talk+about+body+boundaires+consent+and+respect&ikwsec=Home&ikwidx=0#algoliaQueryId=908525015a38ff7348971ab4c5bfd016",
-		"path": "resources_book_all_01.jpg",
+		"path": "resources_book_all_01",
 		"featured": true
 	},
 	{
@@ -68,7 +68,7 @@
 		"author": "Jayneen Sanders",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/my-body-what-i-say/9781925089097-item.html?ikwid=my+body+what+I+say+goes&ikwsec=Home&ikwidx=0#algoliaQueryId=4d91a950c842827156314fd76234a7ac",
-		"path": "resources_book_all_02.jpg",
+		"path": "resources_book_all_02",
 		"featured": false
 	},
 	{
@@ -76,7 +76,7 @@
 		"author": "Tyler Feder",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/bodies-are-cool/9780593112625-item.html?ikwid=bodies+are+cool&ikwsec=Home&ikwidx=0#algoliaQueryId=10dc4844a58480b341411c0aa88196e4",
-		"path": "resources_book_all_03.jpg",
+		"path": "resources_book_all_03",
 		"featured": true
 	},
 	{
@@ -84,7 +84,7 @@
 		"author": "Andi Diehn",
 		"category": "Books for Children and Adults",
 		"href": "https://www.amazon.ca/Mamas-Days-Andi-Diehn/dp/147887600X/ref=asc_df_147887600X/?tag=googleshopc0c-20&linkCode=df0&hvadid=629232476050&hvpos=&hvnetw=g&hvrand=11138328621617453721&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001485&hvtargid=pla-1659622754823&psc=1",
-		"path": "resources_book_all_04.jpg",
+		"path": "resources_book_all_04",
 		"featured": false
 	},
 	{
@@ -92,7 +92,7 @@
 		"author": "Lauren Stockly",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/be-mindful-of-monsters-a/9781953094001-item.html?ikwid=be+mindful+of+monsters&ikwsec=Home&ikwidx=0#algoliaQueryId=3868039621806dd12f98e85d66e55162",
-		"path": "resources_book_all_05.jpg",
+		"path": "resources_book_all_05",
 		"featured": false
 	},
 	{
@@ -100,7 +100,7 @@
 		"author": "Liza Stevens",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/not-today-celeste-a-dogs/9781839973406-item.html?ikwid=not+today%2c+celeste&ikwsec=Home&ikwidx=0#algoliaQueryId=be46c3d5d7f17c99cadd5ed037f21010",
-		"path": "resources_book_all_06.jpg",
+		"path": "resources_book_all_06",
 		"featured": false
 	},
 	{
@@ -108,7 +108,7 @@
 		"author": "Brendan Wenzel",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/they-all-saw-a-cat/9781452150130-item.html?ikwid=they+all+saw+a+cat&ikwsec=Home&ikwidx=0#algoliaQueryId=fd167f95da9c8e03598040b5e7cf6b9a",
-		"path": "resources_book_all_07.jpg",
+		"path": "resources_book_all_07",
 		"featured": true
 	},
 	{
@@ -116,7 +116,7 @@
 		"author": "Martin Waddell",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/owl-babies/9780763617103-item.html?ikwid=owl+babies+martin+waddell&ikwsec=Home&ikwidx=0#algoliaQueryId=a27a4650ebc7cf61fe1c418ea6cd6fb2",
-		"path": "resources_book_all_08.jpg",
+		"path": "resources_book_all_08",
 		"featured": false
 	},
 	{
@@ -124,7 +124,7 @@
 		"author": "CBC Podcasts",
 		"category": "podcast",
 		"href": "https://open.spotify.com/show/2TzjQgrXB9rx1nU1NDGJWS?si=QBXY7ASvQ7KVRqvTCB3HVg&dd=1",
-		"path": "resources_podcast_01.jpg",
+		"path": "resources_podcast_01",
 		"featured": false
 	},
 	{
@@ -132,7 +132,7 @@
 		"author": "Michelle Livock and Monique Mitchelson",
 		"category": "podcast",
 		"href": "https://open.spotify.com/show/42UYC0omfWNQeFt6nuVDqv?si=LnDBbNupTjm5n5s5AzHXMQ&dd=1",
-		"path": "resources_podcast_02.jpg",
+		"path": "resources_podcast_02",
 		"featured": true
 	},
 	{
@@ -140,7 +140,7 @@
 		"author": "Dr. Madeleine De Little",
 		"category": "podcast",
 		"href": "https://open.spotify.com/show/1IlRKrMA49hcrwN96kdY2p?si=kUrOOWXNTWary0qGAaksCg&dd=1",
-		"path": "resources_podcast_03.jpg",
+		"path": "resources_podcast_03",
 		"featured": false
 	},
 	{
@@ -148,7 +148,7 @@
 		"author": "Dr. Becky Kennedy",
 		"category": "podcast",
 		"href": "https://open.spotify.com/show/1paqsvlLA7b5n0MFmo5xOq?si=A42KdtfnRxSrKfIDReukeQ&dd=1",
-		"path": "resources_podcast_04.jpg",
+		"path": "resources_podcast_04",
 		"featured": false
 	}
 ]
