@@ -29,11 +29,33 @@
 	.br {
 		@apply md:block;
 	}
+
+	.button {
+		@apply link relative flex justify-center items-center w-60 h-16 rounded-full overflow-hidden border border-black z-10 before:content-[''] before:block before:absolute before:inset-y-0 before:left-0 before:-right-[2rem] before:border-r-[2rem] before:border-r-transparent before:border-b-[4rem] before:border-b-primary before:-z-10 before:-translate-x-full before:transition before:ease-in-out before:duration-500 before:delay-100 hover:before:translate-x-0;
+	}
 }
 
 body {
 	min-height: 100dvh;
 	overflow-y: scroll;
+}
+
+input,
+select,
+textarea {
+	@apply bg-transparent border-none;
+}
+
+.contact-form input:not([type='checkbox']) {
+	@apply h-20 px-5 bg-transparent border-none;
+}
+
+.contact-form label {
+	@apply mx-10;
+}
+
+input[type='checkbox'] {
+	@apply bg-primary border-2 border-black rounded-none w-6 h-6 ml-10 mr-4 checked:bg-dark;
 }
 
 .branch-bg::before,

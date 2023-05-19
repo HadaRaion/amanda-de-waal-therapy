@@ -5,7 +5,7 @@ export type EmailData = {
 	firstName: string;
 	lastName?: string;
 	subject?: string;
-	phoneNumber?: string | number;
+	phoneNumber?: number;
 	message: string;
 };
 
@@ -32,7 +32,7 @@ export const sendEmail = async (data: EmailData) => {
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
     <ul>
-      <li>Name: ${firstName} ${lastName}</li>
+      <li>Name: ${firstName} ${lastName || ''}</li>
       <li>Email: ${from}</li>
       <li>Phone Number: ${phoneNumber || 'Not provided'}</li>
     </ul>

@@ -2,13 +2,16 @@
 
 import { sendContactEmail } from '@/services/contact';
 import { useState } from 'react';
+import SubmitButton from './SubmitButton';
+import FormBanner from './FormBanner';
+import TermsModal from './TermsModal';
 
 type Form = {
 	firstName: string;
 	lastName?: string;
 	from: string;
 	subject?: string;
-	phoneNumber?: string | number;
+	phoneNumber?: number;
 	message: string;
 	agreedTerms?: boolean;
 };
@@ -18,13 +21,20 @@ const DEFAULT_DATA = {
 	lastName: '',
 	from: '',
 	subject: '',
-	phoneNumber: '',
+	phoneNumber: undefined,
 	message: '',
 	agreedTerms: false,
 };
 
+type BannerData = {
+	message: string;
+	state: 'success' | 'error';
+};
+
 export default function ContactForm() {
 	const [form, setForm] = useState<Form>(DEFAULT_DATA);
+	const [formBanner, setFormBanner] = useState<BannerData | null>(null);
+	const [showTermsModal, setShowTermsModal] = useState(false);
 
 	const handleChange = (
 		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -40,80 +50,147 @@ export default function ContactForm() {
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		console.log('form from client side:>> ', form);
-		sendContactEmail(form);
+		sendContactEmail(form) //
+			.then(() => {
+				setFormBanner({
+					message: 'Your message has been sent successfully',
+					state: 'success',
+				});
+				setForm(DEFAULT_DATA);
+			})
+			.catch(error => {
+				setFormBanner({
+					message:
+						'There was an error sending your message. Please check the form and try again',
+					state: 'error',
+				});
+				console.log('error :>> ', error);
+			})
+			.finally(() => {
+				setTimeout(() => {
+					setFormBanner(null);
+				}, 5000);
+			});
 	};
 
+	const handleCloseModal = () => setShowTermsModal(false);
+
 	return (
-		<section>
-			<p>
+		<section className="flex border-b border-black">
+			<p className="w-[36rem] ml-5 sm:ml-8 lg:ml-12 2xl:ml-16 lg:pr-12 2xl:pr-16 pt-7 border-r border-black">
 				Do you want to learn more about our therapy sessions? Feel free to give
-				me a call or complete the form. <br />I try to respond to email
+				me a call or complete the form. <br /> <br />I try to respond to email
 				inquiries within 1-3 business days
 			</p>
-			<form className="flex flex-col" onSubmit={handleSubmit}>
-				<label htmlFor="first-name">First Name</label>
-				<input
-					type="text"
-					name="firstName"
-					value={form.firstName}
-					onChange={handleChange}
-					id="first-name"
-					required
-					autoFocus
-				/>
-				<label htmlFor="last-name">Last Name</label>
-				<input
-					type="text"
-					name="lastName"
-					value={form.lastName}
-					onChange={handleChange}
-					id="last-name"
-				/>
-				<label htmlFor="from">Email</label>
-				<input
-					type="email"
-					name="from"
-					value={form.from}
-					onChange={handleChange}
-					id="from"
-					required
-				/>
-				<label htmlFor="subject">Subject</label>
-				<input
-					type="text"
-					name="subject"
-					value={form.subject}
-					onChange={handleChange}
-					id="subject"
-					required
-				/>
-				<label htmlFor="phone-number">Phone</label>
-				<input
-					type="number"
-					name="phoneNumber"
-					value={form.phoneNumber}
-					onChange={handleChange}
-					id="phone-number"
-				/>
-				<textarea
-					rows={10}
-					name="message"
-					value={form.message}
-					onChange={handleChange}
-					id=""
-					required
-					placeholder="Your message..."></textarea>
-				<input
-					type="checkbox"
-					name="agreedTerms"
-					onChange={handleCheckboxChange}
-					checked={form.agreedTerms}
-					id="agreed-terms"
-				/>
-				<p>Check here if you accept this terms and conditions.</p>
-				<button type="submit">Submit</button>
+			<form className="contact-form flex flex-col grow" onSubmit={handleSubmit}>
+				<div className="flex border-b border-black">
+					<div className="w-1/2 flex items-center">
+						<label htmlFor="first-name">First Name *</label>
+						<input
+							className="grow"
+							type="text"
+							name="firstName"
+							value={form.firstName}
+							onChange={handleChange}
+							id="first-name"
+							required
+							autoFocus
+						/>
+					</div>
+					<div className="w-1/2 flex items-center mr-5 sm:mr-8 lg:mr-12 2xl:mr-16">
+						<label htmlFor="last-name">Last Name</label>
+						<input
+							className="grow"
+							type="text"
+							name="lastName"
+							value={form.lastName}
+							onChange={handleChange}
+							id="last-name"
+						/>
+					</div>
+				</div>
+
+				<div className="flex items-center border-b border-black">
+					<label htmlFor="from">Email *</label>
+					<input
+						className="grow mr-5 sm:mr-8 lg:mr-12 2xl:mr-16"
+						type="email"
+						name="from"
+						value={form.from}
+						onChange={handleChange}
+						id="from"
+						required
+					/>
+				</div>
+				<div className="flex items-center border-b border-black">
+					<label htmlFor="subject">Subject *</label>
+					<input
+						className="grow mr-5 sm:mr-8 lg:mr-12 2xl:mr-16"
+						type="text"
+						name="subject"
+						value={form.subject}
+						onChange={handleChange}
+						id="subject"
+						required
+					/>
+				</div>
+				<div className="flex items-center border-b border-black">
+					<label htmlFor="phone-number">Phone</label>
+					<input
+						className="grow mr-5 sm:mr-8 lg:mr-12 2xl:mr-16"
+						type="tel"
+						name="phoneNumber"
+						value={form.phoneNumber}
+						onChange={handleChange}
+						id="phone-number"
+					/>
+				</div>
+
+				<div className="flex border-b border-black">
+					<label htmlFor="message" className="pt-6">
+						Message *
+					</label>
+					<textarea
+						className="grow mr-5 sm:mr-8 lg:mr-12 2xl:mr-16 pt-6"
+						rows={10}
+						name="message"
+						value={form.message}
+						onChange={handleChange}
+						id="message"
+						required
+						placeholder="Your message..."></textarea>
+				</div>
+				<div className="h-20 flex items-center">
+					<input
+						type="checkbox"
+						name="agreedTerms"
+						onChange={handleCheckboxChange}
+						checked={form.agreedTerms}
+						required
+						id="agreed-terms"
+					/>
+					<p>
+						* Check here if you accept this{' '}
+						<a
+							className="border-b border-black"
+							onClick={() => setShowTermsModal(true)}>
+							terms and conditions
+						</a>
+						.
+					</p>
+				</div>
+
+				<div className="flex items-center py-5 border-t border-black">
+					<div className="pl-10">
+						{formBanner && <FormBanner message={formBanner.message} />}
+					</div>
+					<SubmitButton
+						label="Send message"
+						className="ml-auto mr-5 sm:mr-8 lg:mr-12 2xl:mr-16"
+					/>
+				</div>
 			</form>
+			<TermsModal visible={showTermsModal} onClose={handleCloseModal} />
 		</section>
 	);
 }

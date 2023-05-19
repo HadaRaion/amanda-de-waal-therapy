@@ -11,8 +11,8 @@ export async function sendContactEmail(email: EmailData) {
 		body: JSON.stringify(email),
 	});
 
+	console.log('email :>> ', email);
 	const data = await response.json();
-	console.log('data :>> ', data);
 
 	if (!response.ok) {
 		throw new Error(data.message || 'Something went wrong to request server.');
