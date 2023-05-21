@@ -76,15 +76,18 @@ export default function ContactForm() {
 	const handleCloseModal = () => setShowTermsModal(false);
 
 	return (
-		<section className="flex border-b border-black">
-			<p className="w-[36rem] ml-5 sm:ml-8 lg:ml-12 2xl:ml-16 lg:pr-12 2xl:pr-16 pt-7 border-r border-black">
+		<section className="flex flex-col md:flex-row border-b border-black">
+			<p
+				className="md:w-[20rem] lg:w-[36rem] ml-5 sm:ml-8 lg:ml-12 2xl:ml-16 mr-5 sm:mr-8 md:mr-0 
+				md:pr-5 lg:pr-12 2xl:pr-16 pt-7 pb-10 md:pb-0
+				md:border-r border-black">
 				Do you want to learn more about our therapy sessions? Feel free to give
 				me a call or complete the form. <br /> <br />I try to respond to email
 				inquiries within 1-3 business days
 			</p>
 			<form className="contact-form flex flex-col grow" onSubmit={handleSubmit}>
-				<div className="flex border-b border-black">
-					<div className="w-1/2 flex items-center">
+				<div className="flex flex-col xl:flex-row border-b border-black border-t md:border-t-0">
+					<div className="xl:w-1/2 flex items-center border-b xl:border-none lg:border-black">
 						<label htmlFor="first-name">First Name *</label>
 						<input
 							className="grow"
@@ -97,7 +100,7 @@ export default function ContactForm() {
 							autoFocus
 						/>
 					</div>
-					<div className="w-1/2 flex items-center mr-5 sm:mr-8 lg:mr-12 2xl:mr-16">
+					<div className="xl:w-1/2 flex items-center mr-5 sm:mr-8 lg:mr-12 2xl:mr-16">
 						<label htmlFor="last-name">Last Name</label>
 						<input
 							className="grow"
@@ -162,6 +165,7 @@ export default function ContactForm() {
 				</div>
 				<div className="h-20 flex items-center">
 					<input
+						className="mr-5 sm:mr-8 lg:mr-12 2xl:mr-16"
 						type="checkbox"
 						name="agreedTerms"
 						onChange={handleCheckboxChange}
@@ -169,7 +173,7 @@ export default function ContactForm() {
 						required
 						id="agreed-terms"
 					/>
-					<p>
+					<p className="grow mr-5 sm:mr-8 lg:mr-12 2xl:mr-16">
 						* Check here if you accept this{' '}
 						<a
 							className="border-b border-black"
@@ -180,13 +184,16 @@ export default function ContactForm() {
 					</p>
 				</div>
 
-				<div className="flex items-center py-5 border-t border-black">
-					<div className="pl-10">
-						{formBanner && <FormBanner message={formBanner.message} />}
-					</div>
+				<div className="flex flex-col xl:flex-row items-center py-5 border-t border-black">
+					{formBanner && (
+						<FormBanner
+							className="sm:mx-8 md:mx-10 mb-5 xl:mb-0"
+							message={formBanner.message}
+						/>
+					)}
 					<SubmitButton
 						label="Send message"
-						className="ml-auto mr-5 sm:mr-8 lg:mr-12 2xl:mr-16"
+						className="ml-5 sm:ml-8 lg:ml-12 xl:ml-auto mr-5 sm:mr-8 lg:mr-12 2xl:mr-16"
 					/>
 				</div>
 			</form>

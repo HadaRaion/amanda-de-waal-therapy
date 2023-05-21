@@ -15,6 +15,7 @@ export default function Home() {
 			<Banner
 				sentence1={`BIPOC and LGBTQ2S+ people are welcomed and supported.`}
 				sentence2={`We would like to acknowledge that we are gathered on the traditional, ancestral, and unceded territory of the Coast Salish peoples including the Squamish, Tsleil-Waututh, Musqueam and Stó:lō Nations.`}
+				spaceBetweenSentences
 			/>
 			<GetComplimentaryConsultation />
 		</PageWrapper>

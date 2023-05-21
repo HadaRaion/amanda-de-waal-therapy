@@ -3,7 +3,7 @@ import Container from './Container';
 
 export default function Hero() {
 	return (
-		<section className="py-12">
+		<section className="py-12 border-b border-black">
 			<Container className="flex flex-col md:flex-row gap-8 md:gap-12">
 				<div className="lg:w-2/5">
 					<Image

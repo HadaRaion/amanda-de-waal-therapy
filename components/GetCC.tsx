@@ -12,7 +12,7 @@ export default function GetComplimentaryConsultation() {
 					We offer a free 20 minute phone consultation to those seeking out my
 					services
 				</p>
-				<GetComplimentaryConsultationForm />
+				<GetComplimentaryConsultationForm className="md:w-3/5" />
 			</Container>
 		</section>
 	);
