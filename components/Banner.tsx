@@ -27,13 +27,15 @@ export default function Banner({
 		<section className="bg-primary text-center py-32 lg:py-36">
 			<Container className="flex flex-col items-center">
 				{image ? (
-					<Image
-						src={image.href}
-						width={200}
-						height={200}
-						alt={image.alt}
-						className="mb-10"
-					/>
+					<div className="relative w-32 lg:w-48 h-32 lg:h-48 mb-10">
+						<Image
+							src={image.href}
+							alt={image.alt}
+							fill
+							quality={100}
+							className="object-cover"
+						/>
+					</div>
 				) : (
 					<Image
 						src="/illust/olive-branch-02.svg"

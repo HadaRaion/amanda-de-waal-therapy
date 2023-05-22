@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const therapyTypes = [
 	'Internal Family Systems',
 	'Somatic Based Therapy',
@@ -12,7 +14,15 @@ const therapyTypes = [
 export default function ServicesInfo() {
 	return (
 		<section className="flex flex-col lg:flex-row border-b border-black">
-			<div className="lg:w-1/4 bg-primary"></div>
+			<div className="relative lg:w-1/4">
+				<Image
+					alt="Cozy Room for Therapy"
+					src="/images/atmosphere.jpg"
+					fill
+					className="object-cover"
+					quality={100}
+				/>
+			</div>
 			<div className="flex flex-col justify-between lg:w-1/2 px-5 sm:px-8 lg:px-12 py-28 ">
 				<p className="lg:w-4/5">
 					There are many different ways that counsellors work, and support
