@@ -1,16 +1,18 @@
-import Instagram from '@/components/Instagram';
-import PageTitle from '@/components/PageTitle';
-import ResourceList from '@/components/ResourceList';
 import {
 	getBookResourcesForAdult,
 	getBookResourcesForAll,
 	getPodcastResources,
 } from '@/services/resources';
+import { getInstagramFeed } from '@/services/instagram';
+import Instagram from '@/components/Instagram';
+import PageTitle from '@/components/PageTitle';
+import ResourceList from '@/components/ResourceList';
 
 export default async function ResourcesPage() {
 	const adultList = await getBookResourcesForAdult();
 	const allList = await getBookResourcesForAll();
 	const podcastList = await getPodcastResources();
+	const feed = await getInstagramFeed(6);
 
 	return (
 		<div>
@@ -22,7 +24,7 @@ export default async function ResourcesPage() {
 				squareImage
 			/>
 			<ResourceList title="Podcasts" list={podcastList} squareImage />
-			<Instagram />
+			<Instagram feed={feed} />
 		</div>
 	);
 }
