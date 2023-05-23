@@ -32,7 +32,7 @@ const Header = () => {
 	}, [path]);
 
 	const parent = {
-		animate: { transition: { staggerChildren: 0.2, delayChildren: 1.2 } },
+		animate: { transition: { staggerChildren: 0.2, delayChildren: 0.5 } },
 	};
 
 	const child = {
@@ -100,7 +100,7 @@ const Header = () => {
 								damping: 20,
 							},
 						}}
-						className="mobile-menu absolute w-full h-screenHeightWithoutHeader top md:hidden bg-primary border-t border-black">
+						className="mobile-menu absolute z-50 w-full h-screenHeightWithoutHeader top md:hidden bg-primary border-t border-black">
 						<motion.ul
 							variants={parent}
 							initial="initial"
