@@ -6,7 +6,7 @@ const contactInfo = [
 	{
 		label: 'email',
 		href: 'mailto:amandadewaaltherapy@gmail.com',
-		value: 'amandadewaaltherapy@gmail.com3',
+		value: 'amandadewaaltherapy@gmail.com',
 	},
 	{
 		label: 'address',
