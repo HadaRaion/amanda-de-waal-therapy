@@ -11,7 +11,12 @@ export const getInstagramFeed = async (count: Number) => {
 
 	const data = await fetch(url)
 		.then(res => res.json())
-		.then(data => data.data);
+		.then(data =>
+			data.data.filter(
+				(post: instagramPost) =>
+					post.media_type === 'IMAGE' || post.media_type === 'CAROUSEL_ALBUM'
+			)
+		);
 
 	const feed = data.slice(0, count);
 

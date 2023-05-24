@@ -21,19 +21,13 @@ export default function Instagram({ feed }: { feed: instagramPost[] }) {
 								href={post.permalink}
 								target="_blank"
 								className="relative w-full aspect-square border overflow-hidden before:absolute before:z-10 before:inset-0 before:bg-light before:opacity-30 hover:before:opacity-0 before:transition before:duration-300">
-								{post.media_type === 'VIDEO' ? (
-									<video
-										className="w-full h-full object-cover"
-										src={post.media_url}></video>
-								) : (
-									<Image
-										src={post.media_url}
-										alt="Cover"
-										fill
-										className="object-cover"
-										quality={100}
-									/>
-								)}
+								<Image
+									src={post.media_url}
+									alt="Cover"
+									fill
+									className="object-cover"
+									quality={100}
+								/>
 							</a>
 						))}
 					</div>
