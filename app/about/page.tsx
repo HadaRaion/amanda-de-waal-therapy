@@ -11,9 +11,11 @@ export default async function AboutPage() {
 	return (
 		<>
 			<PageTitle title="About Me" />
-			<AboutMe />
-			<MsgForClient />
-			<Instagram feed={feed} />
+			<PageWrapper>
+				<AboutMe />
+				<MsgForClient />
+				<Instagram feed={feed} />
+			</PageWrapper>
 		</>
 	);
 }

@@ -39,7 +39,13 @@ export default function AboutMe() {
 						className={`absolute border duration-1000 ease ${
 							index === currentImage ? 'opacity-100' : 'opacity-0'
 						}`}>
-						<Image src={image.src} width={400} height={500} alt={image.alt} />
+						<Image
+							src={image.src}
+							width={400}
+							height={500}
+							alt={image.alt}
+							priority
+						/>
 					</div>
 				))}
 			</div>

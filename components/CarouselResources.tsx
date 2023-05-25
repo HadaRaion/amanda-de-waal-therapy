@@ -18,10 +18,7 @@ export default async function CarouselResources() {
 							src={`/images/resources/${resource.path}.jpg`}
 							alt={`Cover image of ${resource.title}`}
 							fill
-							// width="0"
-							// height="0"
-							// sizes="100vw"
-							// className="w-full h-auto"
+							sizes="100vw"
 						/>
 					</div>
 				))}

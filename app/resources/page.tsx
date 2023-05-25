@@ -7,6 +7,7 @@ import { getInstagramFeed } from '@/services/instagram';
 import Instagram from '@/components/Instagram';
 import PageTitle from '@/components/PageTitle';
 import ResourceList from '@/components/ResourceList';
+import PageWrapper from '@/components/PageWrapper';
 
 export default async function ResourcesPage() {
 	const adultList = await getBookResourcesForAdult();
@@ -15,16 +16,18 @@ export default async function ResourcesPage() {
 	const feed = await getInstagramFeed(6);
 
 	return (
-		<div>
+		<>
 			<PageTitle title="Resources" />;
-			<ResourceList title="Books for Adults" list={adultList} />
-			<ResourceList
-				title="Books for Children and Adults"
-				list={allList}
-				squareImage
-			/>
-			<ResourceList title="Podcasts" list={podcastList} squareImage />
-			<Instagram feed={feed} />
-		</div>
+			<PageWrapper>
+				<ResourceList title="Books for Adults" list={adultList} />
+				<ResourceList
+					title="Books for Children and Adults"
+					list={allList}
+					squareImage
+				/>
+				<ResourceList title="Podcasts" list={podcastList} squareImage />
+				<Instagram feed={feed} />
+			</PageWrapper>
+		</>
 	);
 }
