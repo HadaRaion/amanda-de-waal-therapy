@@ -64,7 +64,6 @@ export default function ContactForm() {
 						'There was an error sending your message. Please check the form and try again',
 					state: 'error',
 				});
-				console.log('error :>> ', error);
 			})
 			.finally(() => {
 				setTimeout(() => {

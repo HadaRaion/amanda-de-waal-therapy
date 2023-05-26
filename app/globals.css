@@ -187,7 +187,3 @@ select {
 input:not([type='checkbox']) {
 	@apply h-20 px-5 focus:outline-none focus:bg-primary;
 }
-/* 
-*:focus {
-	outline-color: rgba(58, 51, 46, 0.6);
-} */
