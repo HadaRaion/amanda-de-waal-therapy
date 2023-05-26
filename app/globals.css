@@ -27,24 +27,32 @@
 		@apply md:block;
 	}
 
-	.button {
-		@apply link relative flex justify-center items-center w-60 h-16 rounded-full overflow-hidden border border-black z-10 before:content-[''] before:block before:absolute before:inset-y-0 before:left-0 before:-right-[2rem] before:border-r-[2rem] before:border-r-transparent before:border-b-[4rem] before:border-b-primary before:-z-10 before:-translate-x-full before:transition before:ease-in-out before:duration-500 before:delay-100 hover:before:translate-x-0;
-	}
-
 	.highlight {
 		@apply relative before:absolute before:bottom-0 before:h-full before:-z-10 before:bg-primary before:duration-1000 before:ease-in-out;
 	}
 
+	.button {
+		@apply link relative flex justify-center items-center w-60 h-16 rounded-full overflow-hidden border border-black z-10 before:content-[''] before:block before:absolute before:inset-y-0 before:left-0 before:-right-[2rem] before:border-r-[2rem] before:border-r-transparent before:border-b-[4rem] before:border-b-primary before:-z-10 before:-translate-x-full before:transition before:ease-in-out before:duration-500 before:delay-100 hover:before:translate-x-0;
+	}
+
 	.contact-form input:not([type='checkbox']) {
-		@apply h-20 px-5;
+		@apply h-20 px-5 focus:outline-none focus:bg-primary;
 	}
 
 	.contact-form label {
-		@apply mx-5 sm:mx-8 md:mx-10;
+		@apply pl-5 sm:pl-8 md:pl-10 w-40;
 	}
 
 	input[type='checkbox'] {
-		@apply border border-black rounded-none w-6 h-6 ml-10 mr-4 checked:bg-dark;
+		@apply border border-black rounded-none w-6 h-6 ml-10 mr-4 checked:bg-dark focus:outline-none focus:ring focus:ring-dark/30;
+	}
+
+	textarea {
+		@apply focus:outline-none focus:bg-primary;
+	}
+
+	input:not([type='checkbox']) {
+		@apply focus:outline-none focus:bg-primary;
 	}
 }
 
@@ -175,3 +183,11 @@ select {
 	-webkit-mask: url('/illust/olive-branch-03.svg') no-repeat center/contain;
 	mask: url('/illust/olive-branch-03.svg') no-repeat center/contain;
 }
+
+input:not([type='checkbox']) {
+	@apply h-20 px-5 focus:outline-none focus:bg-primary;
+}
+/* 
+*:focus {
+	outline-color: rgba(58, 51, 46, 0.6);
+} */

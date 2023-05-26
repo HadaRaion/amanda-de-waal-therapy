@@ -78,7 +78,7 @@ export default function ContactForm() {
 	return (
 		<section className="flex flex-col md:flex-row border-b border-black">
 			<p
-				className="md:w-[20rem] lg:w-[36rem] ml-5 sm:ml-8 lg:ml-12 2xl:ml-16 mr-5 sm:mr-8 md:mr-0 
+				className="md:w-[20rem] lg:w-[34rem] ml-5 sm:ml-8 lg:ml-12 2xl:ml-16 mr-5 sm:mr-8 md:mr-0 
 				md:pr-5 lg:pr-12 2xl:pr-16 pt-7 pb-10 md:pb-0
 				md:border-r border-black">
 				Do you want to learn more about our therapy sessions? Feel free to give
@@ -87,17 +87,16 @@ export default function ContactForm() {
 			</p>
 			<form className="contact-form flex flex-col grow" onSubmit={handleSubmit}>
 				<div className="flex flex-col xl:flex-row border-b border-black border-t md:border-t-0">
-					<div className="xl:w-1/2 flex items-center border-b xl:border-none lg:border-black">
+					<div className="xl:w-1/2 flex items-center  border-b xl:border-none lg:border-black">
 						<label htmlFor="first-name">First Name *</label>
 						<input
-							className="grow"
+							className="grow mr-5 sm:mr-8 lg:mr-12 xl:mr-0"
 							type="text"
 							name="firstName"
 							value={form.firstName}
 							onChange={handleChange}
 							id="first-name"
 							required
-							autoFocus
 						/>
 					</div>
 					<div className="xl:w-1/2 flex items-center mr-5 sm:mr-8 lg:mr-12 2xl:mr-16">

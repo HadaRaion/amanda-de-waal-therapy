@@ -68,7 +68,7 @@ export default function GetComplimentaryConsultationForm({
 			<div className="flex flex-col lg:flex-row gap-10">
 				<div className="lg:w-1/2 border-b border-black">
 					<input
-						className="h-12"
+						className="w-full h-12"
 						type="text"
 						name="firstName"
 						id="name"
@@ -78,7 +78,7 @@ export default function GetComplimentaryConsultationForm({
 				</div>
 				<div className="lg:w-1/2 border-b border-black">
 					<input
-						className="h-12"
+						className="w-full h-12"
 						type="email"
 						name="from"
 						id="email"
@@ -89,11 +89,10 @@ export default function GetComplimentaryConsultationForm({
 			</div>
 			<div className="mt-10 border-b border-black">
 				<textarea
+					className="w-full h-48"
 					name="message"
 					id="message"
 					onChange={handleChange}
-					cols={30}
-					rows={10}
 					placeholder="Your message"></textarea>
 			</div>
 
