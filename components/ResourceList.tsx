@@ -23,11 +23,12 @@ export default function ResourceList({ title, list, squareImage }: Props) {
 							<div
 								className={`relative h-[calc(18rem+2px)] ${
 									squareImage ? 'aspect-square' : 'aspect-[2/3]'
-								} hidden md:block opacity-0 group-hover:opacity-100  ease-in-out duration-300`}>
+								} hidden md:block opacity-0 group-hover:opacity-100 ease-in-out duration-300`}>
 								<Image
 									src={`/images/resources/${resource.path}.jpg`}
 									alt="Cover"
 									fill
+									sizes="20vw"
 								/>
 							</div>
 							<div className="sm:grow lg:ml-20 xl:ml-52">

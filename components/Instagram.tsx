@@ -25,6 +25,7 @@ export default function Instagram({ feed }: { feed: instagramPost[] }) {
 									src={post.media_url}
 									alt="Cover"
 									fill
+									sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
 									className="object-cover"
 									quality={100}
 								/>

@@ -51,9 +51,17 @@ const Header = () => {
 	return (
 		<header className="border-b border-black">
 			<Container className="flex justify-between items-center h-20">
-				<Link className="mt-1" href="/">
+				<Link className="mt-1 w-[230px]" href="/">
 					<h1 className="sr-only">Amanda de Waal Therapy</h1>
-					<Image src="/logo.svg" width={230} height={26} alt="logo" priority />
+					<Image
+						src="/logo.svg"
+						width="0"
+						height="0"
+						sizes="100vw"
+						className="w-full h-auto"
+						alt="logo"
+						priority
+					/>
 				</Link>
 
 				<nav className="hidden md:block">

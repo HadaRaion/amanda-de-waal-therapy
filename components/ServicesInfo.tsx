@@ -14,13 +14,15 @@ const therapyTypes = [
 export default function ServicesInfo() {
 	return (
 		<section className="flex flex-col lg:flex-row border-b border-black">
-			<div className="relative lg:w-1/4">
+			<div className="relative lg:w-1/4 hidden lg:block">
 				<Image
 					alt="Cozy Room for Therapy"
 					src="/images/atmosphere.jpg"
 					fill
+					sizes="25vw"
 					className="object-cover"
 					quality={100}
+					priority
 				/>
 			</div>
 			<div className="flex flex-col justify-between lg:w-1/2 px-5 sm:px-8 lg:px-12 py-28 ">

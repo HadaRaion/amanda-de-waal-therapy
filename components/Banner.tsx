@@ -32,18 +32,22 @@ export default function Banner({
 							src={image.href}
 							alt={image.alt}
 							fill
+							sizes="(max-width: 768px) 33vw, 20vw"
 							quality={100}
 							className="object-cover"
 						/>
 					</div>
 				) : (
-					<Image
-						src="/illust/olive-branch-02.svg"
-						width={30}
-						height={60}
-						alt="A olive branch illust"
-						className="mb-10"
-					/>
+					<div className="w-8 h-16 mb-8">
+						<Image
+							src="/illust/olive-branch-02.svg"
+							width="0"
+							height="0"
+							sizes="100vw"
+							className="w-full h-auto"
+							alt="A olive branch illust"
+						/>
+					</div>
 				)}
 
 				<p className={`lg:w-2/3 ${spaceBetweenSentences && 'mb-9'}`}>

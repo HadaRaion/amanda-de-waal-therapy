@@ -18,7 +18,7 @@ export default async function CarouselResources() {
 							src={`/images/resources/${resource.path}.jpg`}
 							alt={`Cover image of ${resource.title}`}
 							fill
-							sizes="100vw"
+							sizes="(max-width: 768px) 25vw, (max-width: 1024px) 20vw, 16vw"
 						/>
 					</div>
 				))}
