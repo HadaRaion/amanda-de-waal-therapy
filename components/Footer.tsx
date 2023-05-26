@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Container from './Container';
+import ScrollToTopBtn from './ScrollToTopBtn';
 
 const contactInfo = [
 	{ label: 'phone', href: 'tel:+15874104183', value: '+1 587 410 4183' },
@@ -84,6 +85,7 @@ export default function Footer() {
 			<p className="border-t border-black text-center text-sm py-6">
 				AMANDA DE WAAL THERAPY © 2023. All Rights Reserved.
 			</p>
+			<ScrollToTopBtn />
 		</footer>
 	);
 }
