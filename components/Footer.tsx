@@ -80,10 +80,10 @@ export default function Footer() {
 					</ul>
 				</div>
 			</Container>
-			{/* <div className="container w-full py-20 flex justify-between items-center"></div> */}
 
 			<p className="border-t border-black text-center text-sm py-6">
-				AMANDA DE WAAL THERAPY © 2023. All Rights Reserved.
+				© 2023 AMANDA DE WAAL THERAPY.{' '}
+				<span className="mobile-br mt-1 sm:mt-0">All Rights Reserved.</span>
 			</p>
 			<ScrollToTopBtn />
 		</footer>
