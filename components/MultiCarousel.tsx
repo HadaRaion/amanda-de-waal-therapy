@@ -35,7 +35,7 @@ export default function MultiCarousel({ children }: Props) {
 				autoPlay
 				itemClass="mx-4 md:mx-8"
 				containerClass="md:py-32 lg:py-36 md:w-3/4 border-l border-black">
-				<>{children}</>
+				{children}
 			</Carousel>
 		</>
 	);

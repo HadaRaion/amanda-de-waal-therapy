@@ -1,34 +1,33 @@
 {
-  "name": "amanda-de-waal-therapy",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@tailwindcss/forms": "^0.5.3",
-    "@types/node": "20.1.2",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "autoprefixer": "10.4.14",
-    "classnames": "^2.3.2",
-    "eslint": "8.40.0",
-    "eslint-config-next": "^13.4.4",
-    "framer-motion": "^10.12.10",
-    "next": "^13.4.4",
-    "nodemailer": "^6.9.2",
-    "postcss": "8.4.23",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-multi-carousel": "^2.8.3",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4",
-    "yup": "^1.1.1"
-  },
-  "devDependencies": {
-    "@types/nodemailer": "^6.4.7"
-  }
+	"name": "amanda-de-waal-therapy",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@types/node": "20.2.4",
+		"@types/react": "18.2.7",
+		"@types/react-dom": "18.2.4",
+		"autoprefixer": "10.4.14",
+		"classnames": "^2.3.2",
+		"eslint": "8.41.0",
+		"eslint-config-next": "^13.4.4",
+		"framer-motion": "^10.12.10",
+		"next": "^13.4.4",
+		"nodemailer": "^6.9.2",
+		"postcss": "8.4.23",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-multi-carousel": "^2.8.4",
+		"tailwindcss": "3.3.2",
+		"typescript": "5.0.4",
+		"yup": "^1.1.1"
+	},
+	"devDependencies": {
+		"@types/nodemailer": "^6.4.7"
+	}
 }
