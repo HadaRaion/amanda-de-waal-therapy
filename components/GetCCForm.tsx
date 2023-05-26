@@ -72,6 +72,7 @@ export default function GetComplimentaryConsultationForm({
 						type="text"
 						name="firstName"
 						id="name"
+						required
 						onChange={handleChange}
 						placeholder="Your Name"
 					/>
@@ -82,6 +83,7 @@ export default function GetComplimentaryConsultationForm({
 						type="email"
 						name="from"
 						id="email"
+						required
 						onChange={handleChange}
 						placeholder="Your e-mail"
 					/>
@@ -92,6 +94,7 @@ export default function GetComplimentaryConsultationForm({
 					className="w-full h-48"
 					name="message"
 					id="message"
+					required
 					onChange={handleChange}
 					placeholder="Your message"></textarea>
 			</div>
