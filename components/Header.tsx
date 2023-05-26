@@ -23,8 +23,8 @@ const Header = () => {
 
 	useEffect(() => {
 		isMenuOpen
-			? document.body.classList.add('overflow-y-hidden')
-			: document.body.classList.remove('overflow-y-hidden');
+			? document.body.classList.add('lock-screen')
+			: document.body.classList.remove('lock-screen');
 	}, [isMenuOpen]);
 
 	useEffect(() => {

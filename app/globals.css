@@ -11,6 +11,10 @@
 }
 
 @layer components {
+	.lock-screen {
+		@apply overflow-y-hidden h-[100dvh];
+	}
+
 	.link {
 		@apply text-xs tracking-[0.2em] uppercase;
 	}
