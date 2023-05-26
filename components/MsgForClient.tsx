@@ -32,7 +32,7 @@ export default function MsgForClient() {
 					This journey may be your own, but I want to join you in that journey.
 				</p>
 				<div className="md:w-1/2 flex items-center justify-center">
-					<OliveBranch fill="#DEDBD1" width="25%" height="auto" />
+					<OliveBranch fill="#DEDBD1" width="25%" />
 				</div>
 			</Container>
 		</section>
