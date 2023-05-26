@@ -21,14 +21,19 @@ export default function Instagram({ feed }: { feed: instagramPost[] }) {
 								href={post.permalink}
 								target="_blank"
 								className="relative w-full aspect-square border overflow-hidden before:absolute before:z-10 before:inset-0 before:bg-light before:opacity-30 hover:before:opacity-0 before:transition before:duration-300">
-								<Image
+								<img
 									src={post.media_url}
+									alt="Instagram image"
+									className="w-full h-full object-cover"
+								/>
+								{/* <Image
+									src={}
 									alt="Cover"
 									fill
 									sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
 									className="object-cover"
 									quality={100}
-								/>
+								/> */}
 							</a>
 						))}
 					</div>
