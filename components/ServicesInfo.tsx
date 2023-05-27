@@ -32,9 +32,10 @@ export default function ServicesInfo() {
 					approach, meaning that I find deep importance in working with feelings
 					and sensations in the body, opposed to just cognitive thinking and
 					ways of being. Our bodies hold our stories, and it is our bodies that
-					connect us back to our wisdom and truth, moving us towards healing. My
-					approach is relational and experiential, drawing from the current
-					research of neuroscience, and the mind/body connection.
+					connect us back to our wisdom and truth, moving us towards healing. I
+					work mainly from a relational, somatic, and experiential approach,
+					drawing from the current research in relational neurobiology and
+					neuroscience.
 				</p>
 				<br />
 				<p>

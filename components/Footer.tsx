@@ -23,7 +23,7 @@ const workingHours = [
 ];
 
 const socialLinks = [
-	{ href: 'https://www.facebook.com/amandadewaaltherapy', label: 'Facebook' },
+	{ href: 'mailto:amandadewaaltherapy@gmail.com', label: 'Email' },
 	{ href: 'https://www.instagram.com/amandadewaaltherapy', label: 'Instagram' },
 	{
 		label: 'Booking',

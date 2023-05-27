@@ -8,7 +8,7 @@ export default function WhatWeDo() {
 				<p className="link">What I do</p>
 				<h2 className="font-serif text-3xl leading-snug lg:text-4xl xl:text-5xl xl:leading-tight mt-12">
 					<span className="br">
-						Counselling for individuals seeking a space
+						Counselling for individuals seeking a space{' '}
 					</span>
 					to feel safe, seen, and known
 				</h2>

@@ -1,7 +1,22 @@
 const rates = [
-	{ duration: '20 minutes', type: 'Phone call only', price: 'Free' },
-	{ duration: '50 minutes', type: 'In Person / Virtually', price: '$120' },
-	{ duration: '80 minutes', type: 'In Person / Virtually', price: '$150' },
+	{
+		duration: '20 minutes',
+		title: 'Consultation',
+		type: 'Phone call only',
+		price: 'Free',
+	},
+	{
+		duration: '50 minutes',
+		title: 'Individual Counselling',
+		type: 'In Person / Virtually',
+		price: '$135 + GST',
+	},
+	{
+		duration: '80 minutes',
+		title: 'Individual Counselling',
+		type: 'In Person / Virtually',
+		price: '$200 + GST',
+	},
 ];
 
 export default function Rate() {
@@ -16,7 +31,7 @@ export default function Rate() {
             border-dark/30 border-b last:border-b-0 md:border-b-0 
             ">
 						<h3 className="font-serif text-2xl">{rate.duration}</h3>
-						<h3 className="font-serif text-2xl">Individual Counselling</h3>
+						<h3 className="font-serif text-2xl">{rate.title}</h3>
 						<p className="mt-2">{rate.type}</p>
 						<p className="font-serif text-5xl text-dark/70 mt-14">
 							{rate.price}

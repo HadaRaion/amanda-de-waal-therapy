@@ -21,10 +21,10 @@ export default function Hero() {
 						but I want to join you in that journey.
 					</h2>
 					<p className="mt-8 xl:w-4/5">
-						My name is Amanda (she/her), and I am a clinical counsellor, who has
-						found herself in many different roles over the years, all with the
-						desire of creating places of belonging and safety for all people in
-						this world.
+						My name is Amanda (she/her), and I am a Registered Clinical
+						Counsellor, who has found myself in many different roles over the
+						years, all with the desire of creating places of belonging and
+						safety for all people in this world.
 					</p>
 				</div>
 			</Container>

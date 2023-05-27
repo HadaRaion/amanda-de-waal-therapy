@@ -18,12 +18,11 @@ export default async function RatePage() {
 							The session fee is due at the end of session, and can be paid by
 							e-transfer, cash, or credit card.
 							<br />
-							MSP will not cover the fees of your session, and my services are
-							currently not covered by extended benefits. I have met all BCACC
-							requirements for registration and am in the process of receiving
-							my RCC (registered clinical counsellor) designation. That process
-							will be complete in the next few months, which will result in
-							having my services covered by most extended benefits.
+							MSP will not cover the fees of your session, but my services are
+							often covered by extended benefit plans. Please ensure that you’ve
+							checked with your insurance provider, and note that I am unable to
+							bill directly to your insurer. I am able to provide receipts with
+							my RCC# attached, that you may submit on your own.
 						</p>
 					</Container>
 				</section>

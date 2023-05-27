@@ -123,7 +123,8 @@ export default function AboutMe() {
 					(probably too much coffee), and my nalgene full of lemon water. I
 					enjoy laughing until my abs hurt, and will shamelessly claim that I
 					think my jokes are the funniest. I identify as an HSP (highly
-					sensitive person) who has ADHD, and I think those two labels give me
+					sensitive person) who is neurodivergent, and although those labels
+					come with significant challenges, I think they also give me
 					superpowers.
 				</p>
 			</div>

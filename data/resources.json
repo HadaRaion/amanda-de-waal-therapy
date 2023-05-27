@@ -32,21 +32,22 @@
 		"featured": false
 	},
 	{
-		"title": "It’s Not Always Depression",
-		"author": "Hilary Jacobs Hendel",
-		"category": "Books for Adults",
-		"href": "https://www.chapters.indigo.ca/en-ca/books/its-not-always-depression-working/9780399588143-item.html?ikwid=its+not+always+depression&ikwsec=Home&ikwidx=0#algoliaQueryId=cd289674311c616873c5de5ef825d583",
-		"path": "resources_book_adult_05",
-		"featured": true
-	},
-	{
 		"title": "Adult Children of Emotionally Immature Parents",
 		"author": "Lindsay C. Gibson",
 		"category": "Books for Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/adult-children-of-emotionally-immature/9781626251700-item.html?ikwid=adult+children+of+emotionally+immature+parents&ikwsec=Home&ikwidx=0#algoliaQueryId=8a209de34c957d104e174fc9b43b2217",
-		"path": "resources_book_adult_06",
+		"path": "resources_book_adult_05",
 		"featured": false
 	},
+	{
+		"title": "It’s Not Always Depression",
+		"author": "Hilary Jacobs Hendel",
+		"category": "Books for Adults",
+		"href": "https://www.chapters.indigo.ca/en-ca/books/its-not-always-depression-working/9780399588143-item.html?ikwid=its+not+always+depression&ikwsec=Home&ikwidx=0#algoliaQueryId=cd289674311c616873c5de5ef825d583",
+		"path": "resources_book_adult_06",
+		"featured": true
+	},
+
 	{
 		"title": "No Bad Parts",
 		"author": "Richard Schwartz",
@@ -96,7 +97,7 @@
 		"featured": false
 	},
 	{
-		"title": "Not Today, Celeste!: A God’s Tale about her Human’s Depression",
+		"title": "Not Today, Celeste!: A Dog’s Tale about her Human’s Depression",
 		"author": "Liza Stevens",
 		"category": "Books for Children and Adults",
 		"href": "https://www.chapters.indigo.ca/en-ca/books/not-today-celeste-a-dogs/9781839973406-item.html?ikwid=not+today%2c+celeste&ikwsec=Home&ikwidx=0#algoliaQueryId=be46c3d5d7f17c99cadd5ed037f21010",

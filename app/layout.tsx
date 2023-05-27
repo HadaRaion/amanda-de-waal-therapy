@@ -22,7 +22,8 @@ export const metadata = {
 		template: 'Amanda de Waal Therapy | %s',
 	},
 
-	description: '헬로',
+	description:
+		'Abbotsford Registered Clinical Counsellor. Counselling that offers a space for individuals  to be safe, seen and known.  Specializing in trauma, depression, PTSD, and grief.',
 	icons: {
 		icon: '/favicon.ico',
 	},
