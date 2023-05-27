@@ -86,10 +86,8 @@ export default function ContactForm() {
 				className="md:w-[20rem] lg:w-[34rem] ml-5 sm:ml-8 lg:ml-12 2xl:ml-16 mr-5 sm:mr-8 md:mr-0 
 				md:pr-5 lg:pr-12 2xl:pr-16 pt-7 pb-10 md:pb-0
 				md:border-r border-black">
-				Do you want to learn more about our therapy sessions? Feel free to give
-				me a call or complete the form. <br /> <br />
-				Wanting to connect, or have any questions? Feel free to complete this
-				form, and I’ll respond as soon as I’m able.
+				Wanting to connect, or have any questions? <br />
+				Feel free to complete this form, and I’ll respond as soon as I’m able.
 			</p>
 			<form className="contact-form flex flex-col grow" onSubmit={handleSubmit}>
 				<div className="flex flex-col xl:flex-row border-b border-black border-t md:border-t-0">
