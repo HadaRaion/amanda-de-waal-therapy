@@ -12,7 +12,7 @@
 
 @layer components {
 	.lock-screen {
-		@apply overflow-y-hidden h-[100dvh];
+		@apply h-screen overflow-hidden;
 	}
 
 	.link {

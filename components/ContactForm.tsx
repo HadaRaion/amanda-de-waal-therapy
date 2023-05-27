@@ -175,7 +175,7 @@ export default function ContactForm() {
 					<p className="grow mr-5 sm:mr-8 lg:mr-12 2xl:mr-16">
 						* Check here if you accept this{' '}
 						<a
-							className="border-b border-black"
+							className="border-b border-black cursor-pointer"
 							onClick={() => setShowTermsModal(true)}>
 							terms and conditions
 						</a>

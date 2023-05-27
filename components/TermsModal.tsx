@@ -1,5 +1,3 @@
-import SubmitButton from './SubmitButton';
-
 export default function TermsModal({
 	visible,
 	onClose,
@@ -11,12 +9,16 @@ export default function TermsModal({
 		e.target.id === 'modal-bg' && onClose();
 	};
 
+	visible
+		? document.body.classList.add('lock-screen')
+		: document.body.classList.remove('lock-screen');
+
 	return visible ? (
 		<div
 			className="fixed inset-0 bg-dark/30 backdrop-blur flex items-center justify-center z-50"
 			id="modal-bg"
 			onClick={handleOnClose}>
-			<div className="lg:w-3/5 bg-light py-8 px-10 border border-black">
+			<div className="w-[90vw] h-[90vh] lg:w-3/5 lg:h-auto overflow-y-scroll bg-light py-8 px-10 border border-black">
 				<h1 className="font-serif text-2xl text-center">
 					Terms and Conditions for Contact Form
 				</h1>
