@@ -1,7 +1,7 @@
 'use client';
 
 import { sendContactEmail } from '@/services/contact';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SubmitButton from './SubmitButton';
 import FormBanner from './FormBanner';
 import TermsModal from './TermsModal';
@@ -36,9 +36,11 @@ export default function ContactForm() {
 	const [formBanner, setFormBanner] = useState<BannerData | null>(null);
 	const [showTermsModal, setShowTermsModal] = useState(false);
 
-	showTermsModal
-		? document.body.classList.add('lock-screen')
-		: document.body.classList.remove('lock-screen');
+	useEffect(() => {
+		showTermsModal
+			? document.body.classList.add('lock-screen')
+			: document.body.classList.remove('lock-screen');
+	}, [showTermsModal]);
 
 	const handleChange = (
 		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
