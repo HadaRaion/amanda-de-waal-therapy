@@ -30,6 +30,9 @@ export default function AboutMe() {
 		return () => clearInterval(interval);
 	}, [currentImage]);
 
+	const highlightAnim = (index: Number) =>
+		currentImage === index ? 'bg-[0_0]' : 'bg-[100%_0]';
+
 	return (
 		<section className="flex flex-col lg:flex-row gap-14 border-b border-black">
 			<div className="xs:min-h-[500px] min-h-[550px] sm:min-h-[600px] lg:w-2/5 mx-5 sm:mx-8 pt-32 lg:pt-36 lg:pb-36 lg:border-r flex items-center justify-center relative">
@@ -52,22 +55,14 @@ export default function AboutMe() {
 			<div className="lg:w-3/5 ml-5 sm:ml-8 lg:ml-0 mr-5 sm:mr-8 lg:mr-12 2xl:mr-16 pb-32 lg:py-36 flex flex-col justify-between">
 				<p className="xl:w-3/5">
 					My name is{' '}
-					<span
-						className={`highlight ${
-							currentImage === 0 ? 'before:w-full' : 'before:w-0'
-						}`}>
+					<span className={`highlight ${highlightAnim(0)}`}>
 						Amanda (she/her)
 					</span>
 					, and I am a clinical{' '}
-					<span
-						className={`highlight ${
-							currentImage === 0 ? 'before:w-full' : 'before:w-0'
-						}`}>
-						counsellor
-					</span>
-					, who has found herself in many different roles over the years, all
-					with the desire of creating places of belonging and safety for all
-					people in this world.
+					<span className={`highlight ${highlightAnim(0)}`}>counsellor</span>,
+					who has found herself in many different roles over the years, all with
+					the desire of creating places of belonging and safety for all people
+					in this world.
 				</p>
 				<br />
 				<br />
@@ -76,50 +71,30 @@ export default function AboutMe() {
 					It’s helpful to get a feel for what a therapist is like before you
 					decide to meet with them. So, let me tell you a bit about myself. I am
 					the{' '}
-					<span
-						className={`highlight ${
-							currentImage === 1 ? 'before:w-full' : 'before:w-0'
-						}`}>
+					<span className={`highlight ${highlightAnim(1)}`}>
 						second youngest of 6 kids
 					</span>
 					, and grew up on the{' '}
-					<span
-						className={`highlight ${
-							currentImage === 2 ? 'before:w-full' : 'before:w-0'
-						}`}>
+					<span className={`highlight ${highlightAnim(2)}`}>
 						West Coast of BC
 					</span>
 					, which I still call home. Whenever it’s not raining you can find me{' '}
-					<span
-						className={`highlight ${
-							currentImage === 3 ? 'before:w-full' : 'before:w-0'
-						}`}>
+					<span className={`highlight ${highlightAnim(3)}`}>
 						on a beach having a fire
 					</span>
 					, or sitting up high somewhere admiring a good view. I feel most alive
 					with the sun on my face, surrounded by my people. I{' '}
-					<span
-						className={`highlight ${
-							currentImage === 4 ? 'before:w-full' : 'before:w-0'
-						}`}>
+					<span className={`highlight ${highlightAnim(4)}`}>
 						love being outdoors
 					</span>
 					, and especially love swimming in any body of water I can find. I’d
 					argue that one of the best feelings in the world is a midday nap,
 					outside, with the{' '}
-					<span
-						className={`highlight ${
-							currentImage === 5 ? 'before:w-full' : 'before:w-0'
-						}`}>
+					<span className={`highlight ${highlightAnim(5)}`}>
 						sun coating my body
 					</span>
 					. I thrive on{' '}
-					<span
-						className={`highlight ${
-							currentImage === 6 ? 'before:w-full' : 'before:w-0'
-						}`}>
-						good coffee
-					</span>{' '}
+					<span className={`highlight ${highlightAnim(6)}`}>good coffee</span>{' '}
 					(probably too much coffee), and my nalgene full of lemon water. I
 					enjoy laughing until my abs hurt, and will shamelessly claim that I
 					think my jokes are the funniest. I identify as an HSP (highly

@@ -32,7 +32,13 @@
 	}
 
 	.highlight {
-		@apply relative before:absolute before:bottom-0 before:h-full before:-z-10 before:bg-primary before:duration-1000 before:ease-in-out;
+		background-color: none;
+		background: linear-gradient(
+			90deg,
+			rgba(222, 219, 209, 1) 50%,
+			rgba(255, 255, 255, 0) 50%
+		);
+		@apply bg-[length:200%_100%] duration-1000 ease-in-out;
 	}
 
 	.button {
