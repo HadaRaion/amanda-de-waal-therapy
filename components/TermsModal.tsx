@@ -9,10 +9,6 @@ export default function TermsModal({
 		e.target.id === 'modal-bg' && onClose();
 	};
 
-	visible
-		? document.body.classList.add('lock-screen')
-		: document.body.classList.remove('lock-screen');
-
 	return visible ? (
 		<div
 			className="fixed inset-0 bg-dark/30 backdrop-blur flex items-center justify-center z-50"

@@ -36,6 +36,10 @@ export default function ContactForm() {
 	const [formBanner, setFormBanner] = useState<BannerData | null>(null);
 	const [showTermsModal, setShowTermsModal] = useState(false);
 
+	showTermsModal
+		? document.body.classList.add('lock-screen')
+		: document.body.classList.remove('lock-screen');
+
 	const handleChange = (
 		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 	) => {
