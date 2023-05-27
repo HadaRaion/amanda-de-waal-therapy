@@ -41,7 +41,7 @@ export default function ScrollToTopBtn() {
 			initial="hide"
 			animate={controls}
 			onClick={scrollToTop}>
-			TOP
+			<span className="ml-[2px] lg:ml-[3px]">TOP</span>
 		</motion.button>
 	);
 }
