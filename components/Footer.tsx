@@ -23,7 +23,10 @@ const workingHours = [
 ];
 
 const socialLinks = [
-	{ href: 'mailto:amandadewaaltherapy@gmail.com', label: 'Email' },
+	{
+		href: 'https://www.linkedin.com/in/amanda-de-waal-9b978b245/?originalSubdomain=ca',
+		label: 'LinkedIn',
+	},
 	{ href: 'https://www.instagram.com/amandadewaaltherapy', label: 'Instagram' },
 	{
 		label: 'Booking',
