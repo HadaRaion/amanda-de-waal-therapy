@@ -18,6 +18,19 @@ const links = [
 const Header = () => {
 	const path = usePathname();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [showHeader, setShowHeader] = useState(true);
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollPos = window.pageYOffset;
+			setShowHeader(prevScrollPos > currentScrollPos || currentScrollPos === 0);
+			setPrevScrollPos(currentScrollPos);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [prevScrollPos]);
 
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -49,7 +62,10 @@ const Header = () => {
 	};
 
 	return (
-		<header className="border-b border-black">
+		<header
+			className={`border-b border-black fixed w-full bg-light z-50 duration-300 ease-in-out ${
+				showHeader ? 'top-0' : '-top-20'
+			}`}>
 			<Container className="flex justify-between items-center h-20">
 				<Link className="mt-1 w-[230px]" href="/">
 					<h1 className="sr-only">Amanda de Waal Therapy</h1>

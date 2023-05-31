@@ -11,7 +11,7 @@ export default function TermsModal({
 
 	return visible ? (
 		<div
-			className="fixed inset-0 bg-dark/30 backdrop-blur flex items-center justify-center z-50"
+			className="fixed inset-0 bg-dark/30 backdrop-blur flex items-center justify-center z-30"
 			id="modal-bg"
 			onClick={handleOnClose}>
 			<div className="w-[90vw] h-[90vh] lg:w-3/5 lg:h-auto overflow-y-scroll bg-light py-8 px-10 border border-black">
