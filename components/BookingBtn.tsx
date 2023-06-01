@@ -31,7 +31,7 @@ export default function ScrollToTopBtn() {
 
 	return (
 		<motion.a
-			className="fixed z-40 bottom-4 right-4 lg:bottom-10 lg:right-10 w-14 h-14 lg:w-[90px] lg:h-[90px] rounded-full border border-dark bg-dark text-light hover:bg-primary  hover:text-dark duration-500 ease flex justify-center items-center link"
+			className="fixed z-40 bottom-4 right-4 lg:bottom-10 lg:right-10  w-[4.5rem] h-[4.5rem] lg:w-[5.5rem] lg:h-[5.5rem] rounded-full border border-dark bg-dark text-light hover:bg-primary  hover:text-dark duration-500 ease flex justify-center items-center link"
 			variants={BookingBtnVariants}
 			initial="hide"
 			animate={controls}
