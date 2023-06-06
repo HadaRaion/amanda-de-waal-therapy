@@ -6,6 +6,9 @@ export type instagramPost = {
 	media_type: 'VIDEO' | 'IMAGE' | 'CAROUSEL_ALBUM';
 };
 
+// Refresh long-lived-access-token
+// https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token={long-lived-access-token}
+
 export const getInstagramFeed = async (count: Number) => {
 	const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.INSTAGRAM_ACCESS_TOKEN}`;
 
