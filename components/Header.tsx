@@ -20,11 +20,13 @@ const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [showHeader, setShowHeader] = useState(true);
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	const [isTop, setIsTop] = useState(true);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			const currentScrollPos = window.pageYOffset;
 			setShowHeader(prevScrollPos > currentScrollPos || currentScrollPos === 0);
+			setIsTop(currentScrollPos === 0);
 			setPrevScrollPos(currentScrollPos);
 		};
 
@@ -83,17 +85,19 @@ const Header = () => {
 				<nav className="hidden md:block">
 					<ul className="flex gap-10">
 						{links.map(link => (
-							<li key={link.href}>
-								<Link className="relative link" href={link.href}>
-									{link.href === path && (
-										<motion.span
-											layoutId="underline"
-											className="block absolute left-0 top-full h-[1px] w-[calc(100%-2px)] bg-black"
-										/>
-									)}
-
+							<li key={link.href} className="relative">
+								<Link className="link" href={link.href}>
 									{link.label}
 								</Link>
+								{link.href === path && isTop && (
+									<motion.span
+										layoutId="underline"
+										className="absolute block left-0 top-full h-[1px] w-[calc(100%-2px)] bg-black"
+									/>
+								)}
+								{link.href === path && !isTop && (
+									<motion.span className="absolute block left-0 top-full h-[1px] w-[calc(100%-2px)] bg-black" />
+								)}
 							</li>
 						))}
 					</ul>
