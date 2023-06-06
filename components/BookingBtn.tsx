@@ -6,7 +6,7 @@ import {
 	useScroll,
 	motion,
 } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 const BookingBtnVariants: Variants = {
 	hide: { opacity: 0 },
