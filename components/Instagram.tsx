@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { instagramPost } from '@/services/instagram';
 
 export default function Instagram({ feed }: { feed: instagramPost[] }) {
+	console.log('feed :>> ', feed);
 	return (
 		<section className="py-32 lg:py-36">
 			<Container>

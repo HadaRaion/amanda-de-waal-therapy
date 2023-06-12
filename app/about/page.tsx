@@ -7,7 +7,7 @@ import { getInstagramFeed } from '@/services/instagram';
 
 export default async function AboutPage() {
 	const feed = await getInstagramFeed(6);
-
+	console.log('feed :>> ', feed);
 	return (
 		<>
 			<PageTitle title="About Me" />
