@@ -14,12 +14,12 @@ export default function WhatWeDo() {
 				</h2>
 				<p className="md:w-2/3 mt-6 mb-20">
 					There is no “one size fits all” when it comes to therapy, which means
-					that I have the honour of catering treatment to meet my clients needs,
-					in ways where they have the opportunity to feel safe, seen, and known.
-					My services don’t come with the intention of “fixing” you, because I
-					don’t believe that you need fixing. Instead, I fully believe that you
-					are already whole, and it’s your innate biological pull towards
-					healing that will guide our sessions.
+					that I have the honour of catering treatment to meet my client&rsquo;s
+					needs, in ways where they have the opportunity to feel safe, seen, and
+					known. My services don’t come with the intention of “fixing” you,
+					because I don’t believe that you need fixing. Instead, I fully believe
+					that you are already whole, and it’s your innate biological pull
+					towards healing that will guide our sessions.
 				</p>
 				<Button href="/services" label="SEE DETAIL" darker={true} />
 			</Container>

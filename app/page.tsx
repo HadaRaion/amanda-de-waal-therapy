@@ -13,9 +13,7 @@ export default function Home() {
 			{/* @ts-expect-error Server Component */}
 			<CarouselResources />
 			<Banner
-				sentence1={`BIPOC and LGBTQ2S+ people are welcomed and supported.`}
-				sentence2={`I would like to acknowledge that we are gathered on the traditional, ancestral, and unceded territory of the Coast Salish peoples including the Squamish, Tsleil-Waututh, Musqueam and Stó:lō Nations.`}
-				spaceBetweenSentences
+				sentence1={`I acknowledge that I live, play, and work, on the traditional and ancestral territory of the Coast Salish peoples including the Squamish, Tsleil-Waututh, Musqueam and Stó:lō Nations.`}
 			/>
 			<GetComplimentaryConsultation />
 		</PageWrapper>

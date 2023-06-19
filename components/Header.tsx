@@ -10,7 +10,7 @@ import Container from './Container';
 const links = [
 	{ href: '/about', label: 'About' },
 	{ href: '/services', label: 'Services' },
-	{ href: '/rate', label: 'Rate' },
+	{ href: '/rate', label: 'Rates' },
 	{ href: '/resources', label: 'Resources' },
 	{ href: '/contact', label: 'contact' },
 ];

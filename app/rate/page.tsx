@@ -10,7 +10,7 @@ export default async function RatePage() {
 
 	return (
 		<>
-			<PageTitle title="Rate & Insurance" />
+			<PageTitle title="Rates & Insurance" />
 			<PageWrapper>
 				<section className="py-32 lg:py-36">
 					<Container>

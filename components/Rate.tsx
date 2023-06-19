@@ -1,18 +1,18 @@
 const rates = [
 	{
-		duration: '20 minutes',
+		duration: '20 minute',
 		title: 'Consultation',
 		type: 'Phone call only',
 		price: 'Free',
 	},
 	{
-		duration: '50 minutes',
+		duration: '50 minute',
 		title: 'Individual Counselling',
 		type: 'In Person / Virtually',
 		price: '$135',
 	},
 	{
-		duration: '80 minutes',
+		duration: '80 minute',
 		title: 'Individual Counselling',
 		type: 'In Person / Virtually',
 		price: '$200',
