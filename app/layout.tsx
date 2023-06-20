@@ -21,11 +21,20 @@ export const metadata = {
 		default: 'Amanda de Waal Therapy',
 		template: 'Amanda de Waal Therapy | %s',
 	},
-
 	description:
-		'Abbotsford Registered Clinical Counsellor. Counselling that offers a space for individuals  to be safe, seen and known.  Specializing in trauma, depression, PTSD, and grief.',
+		'Abbotsford Registered Clinical Counsellor. Counselling that offers a space for individuals to be safe, seen and known. Specializing in trauma, depression, PTSD, and grief.',
 	icons: {
 		icon: '/favicon.ico',
+	},
+	metadataBase: new URL('https://www.amandadewaaltherapy.com'),
+	openGraph: {
+		title: 'Amanda de Waal Therapy',
+		description:
+			'Abbotsford Registered Clinical Counsellor. Counselling that offers a space for individuals to be safe, seen and known. Specializing in trauma, depression, PTSD, and grief.',
+		url: 'https://www.amandadewaaltherapy.com',
+		siteName: 'Amanda de Waal Therapy',
+		locale: 'en_US',
+		type: 'website',
 	},
 };
 
