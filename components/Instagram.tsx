@@ -1,9 +1,31 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Container from './Container';
-import Image from 'next/image';
 import { instagramPost } from '@/services/instagram';
 
-export default function Instagram({ feed }: { feed: instagramPost[] }) {
-	console.log('feed :>> ', feed);
+export default function Instagram() {
+	const [feed, setFeed] = useState<instagramPost[]>([]);
+
+	useEffect(() => {
+		fetch(
+			`https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN}`
+		)
+			.then(res => res.json())
+			.then(
+				data =>
+					data.data &&
+					data.data
+						.filter(
+							(post: instagramPost) =>
+								post.media_type === 'IMAGE' ||
+								post.media_type === 'CAROUSEL_ALBUM'
+						)
+						.slice(0, 6)
+			)
+			.then(data => setFeed(data));
+	}, []);
+
 	return (
 		<section className="py-32 lg:py-36">
 			<Container>
@@ -34,14 +56,4 @@ export default function Instagram({ feed }: { feed: instagramPost[] }) {
 			</Container>
 		</section>
 	);
-}
-{
-	/* <Image
-		src={}
-		alt="Cover"
-		fill
-		sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
-		className="object-cover"
-		quality={100}
-	/> */
 }

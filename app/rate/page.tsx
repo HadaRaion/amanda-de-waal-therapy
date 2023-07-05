@@ -1,13 +1,10 @@
-import { getInstagramFeed } from '@/services/instagram';
 import PageWrapper from '@/components/PageWrapper';
 import PageTitle from '@/components/PageTitle';
 import Container from '@/components/Container';
 import Rate from '@/components/Rate';
 import Instagram from '@/components/Instagram';
 
-export default async function RatePage() {
-	const feed = await getInstagramFeed(6);
-
+export default function RatePage() {
 	return (
 		<>
 			<PageTitle title="Rates & Insurance" />
@@ -27,7 +24,7 @@ export default async function RatePage() {
 					</Container>
 				</section>
 				<Rate />
-				<Instagram feed={feed} />
+				<Instagram />
 			</PageWrapper>
 		</>
 	);
