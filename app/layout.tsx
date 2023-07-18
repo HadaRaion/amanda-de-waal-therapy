@@ -2,6 +2,7 @@ import './globals.css';
 import { Mulish, Philosopher } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import GA from '@/components/GA';
 
 const mulish = Mulish({
 	subsets: ['latin'],
@@ -39,6 +40,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
+			<GA />
 			<body
 				className={`${mulish.variable} ${philosopher.variable} flex flex-col w-full font-sans bg-light font-light selection:bg-dark/60 selection:text-light`}>
 				<Header />
