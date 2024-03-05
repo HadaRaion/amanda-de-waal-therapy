@@ -9,13 +9,13 @@ const rates = [
 		duration: '50 minute',
 		title: 'Individual Counselling',
 		type: 'In Person / Virtually',
-		price: '$135',
+		price: '$145',
 	},
 	{
 		duration: '80 minute',
 		title: 'Individual Counselling',
 		type: 'In Person / Virtually',
-		price: '$200',
+		price: '$220',
 	},
 ];
 
