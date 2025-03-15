@@ -34,17 +34,8 @@ export default function Rate() {
             <h3 className="font-serif text-2xl">{rate.duration}</h3>
             <h3 className="font-serif text-2xl">{rate.title}</h3>
             <p className="mt-2">{rate.type}</p>
-            <p
-              className={`font-serif text-5xl text-dark/70 mt-10 md:mt-12 ${
-                rate.price === "Free" || "md:ml-4"
-              }`}
-            >
+            <p className="font-serif text-5xl text-dark/70 mt-10 md:mt-12">
               {rate.price}
-              {rate.price === "Free" || (
-                <span className="font-sans text-sm text-center block md:inline mt-3 md:ml-3 ">
-                  + GST
-                </span>
-              )}
             </p>
           </li>
         ))}
